@@ -42,7 +42,10 @@ for topic in topics:
             # admin_client.create_topics(new_topics=[new_topic], validate_only=False) — команда для створення топіку. Якщо validate_only встановити у True, то топік не буде створений, а лише буде перевірено його визначення.
 
 # Перевіряємо список існуючих топіків
-print(admin_client.list_topics())
+# print(admin_client.list_topics())
+for topic in admin_client.list_topics():
+    if "vekh__" in topic:
+        print(topic)
 
 # Закриття зв'язку з клієнтом
 admin_client.close()

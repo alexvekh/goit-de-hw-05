@@ -19,7 +19,7 @@ consumer = KafkaConsumer(
     group_id='my_consumer_group_4'   # Ідентифікатор групи споживачів
 )
 
-# Підписка на тему
+# Підписка на теми
 consumer.subscribe(["vekh__temperature_alerts", "vekh__humidity_alerts"])
 print(f"Subscribed to topics")
 

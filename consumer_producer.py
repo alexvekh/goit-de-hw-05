@@ -38,9 +38,7 @@ topic_name = f'{my_name}__building_sensors'
 
 # Підписка на тему
 consumer.subscribe([topic_name])
-
 print(f"Subscribed to topic '{topic_name}'")
-
 # Обробка повідомлень з топіку
 try:
     for message in consumer:
